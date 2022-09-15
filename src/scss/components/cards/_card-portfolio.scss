@@ -75,10 +75,10 @@
                 margin-top: auto;
                 height: 36px;
                 font-size: $size-7;
-                /*
                 &:hover{
-                    background-color: $grey;
-                }*/
+                    background-color: #fff;
+                    color: $grey;
+                }
             }
         }
     }
