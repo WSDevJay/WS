@@ -1,0 +1,22 @@
+.blog-list{
+    background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/curve-dark-large.png) no-repeat top/101%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-inline: 1.5rem;
+    background-color: $light !important;
+    @include until-fullhd {
+        background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/curve-dark-large.png) no-repeat top/131%;
+    }
+    @include until-widescreen {
+        background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/curve-dark-large.png) no-repeat top/161%;
+    }
+    @include touch {
+        background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/curve-dark-large.png) no-repeat top/181%;
+    }
+    @include mobile {
+        background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/curve-dark-large.png) no-repeat top/431%;
+    }
+    .columns.blog{
+        margin-bottom: 63px;
+    }
+}

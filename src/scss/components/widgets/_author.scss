@@ -1,0 +1,18 @@
+.media.author {
+  align-items: flex-end;
+  .media-left {
+    flex-basis: 48px;
+    &.is-large {
+      flex-basis: 50%;
+      & + .media-content {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
+
+.blog-detail .author {
+  @include desktop {
+    margin-top: -17%;
+  }
+}

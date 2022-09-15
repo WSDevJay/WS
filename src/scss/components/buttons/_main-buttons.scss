@@ -1,0 +1,50 @@
+.button{
+    font-weight: 900;
+    height: 42px;
+    padding-inline: 11.25px;
+    width: fit-content;
+    display: grid;
+    place-items: center;
+    border-radius: 99px;
+    text-transform: uppercase;
+    &.is-dark{
+        color: $yellow;
+        background-color: $grey;
+        transition: all 200ms ease;
+
+        &:hover{
+            color: $grey;
+            background-color: $yellow;
+        }
+    }
+    &.is-dark-blue{
+        color: $primary;
+        background-color: $grey;
+        transition: all 200ms ease;
+
+        &:hover{
+            color: $grey;
+            background-color: $primary;
+        }
+    }
+    &.is-yellow{
+        color: $grey;
+        background-color: $yellow;
+        transition: all 200ms ease;
+
+        &:hover{
+            color: $yellow;
+            background-color: $grey;
+        }
+    }
+    &.is-blue{
+        color: $grey;
+        background-color: $primary;
+        transition: all 200ms ease;
+
+        &:hover{
+            color: $primary;
+            background-color: $grey;
+        }
+    }
+}

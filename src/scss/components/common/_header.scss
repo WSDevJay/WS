@@ -1,0 +1,271 @@
+header{
+  transition: all .3s;
+  padding-block: 30px;
+  @include touch {
+    padding-block: 25px;
+  }
+  &.is-fixed-top{
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+  }
+  .logo-col{
+    padding: 0;
+    padding-right: 10px;
+    display: grid;
+    place-items: center;
+    .logo.is-light {
+      display: block;
+      width: 176px;
+    }
+    .logo.is-dark {
+      width: 176px;
+      display: none;
+    }
+    .logo-mobile.is-light {
+      width: 146px;
+      display: block;
+    }
+    .logo-mobile.is-dark{
+      width: 146px;
+      display: none;
+    }
+  }
+  .nav-col{
+    border-bottom: 3px solid #fff;
+    padding: 0;
+    @include touch {
+     border: none;
+    }
+  }
+  .top-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 21px;
+      li{
+        a{
+          color: #fff;
+          font-weight: 800;
+          text-transform: uppercase;
+          display: flex;
+          align-items: baseline;
+          gap: .4rem;
+          transition: all 200ms ease;
+          &:hover{
+            &:not(.phone){
+              color: $yellow !important;
+            }
+          }
+        }
+        &.phone{
+          a{
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+  nav.navbar {
+    .navbar-brand{
+      align-items: center !important;
+      @include touch {
+        padding-inline: 1.5rem;
+      }
+      .navbar-burger {
+        height: 48px;
+        width: 48px;
+        color: #fff;
+        margin: 0;
+        font-size: 1.9rem;
+        display: grid;
+        place-items: center;
+      }
+      .phone-mobile{
+        height: 48px;
+        width: 48px;
+        color: $yellow;
+        margin-left: auto;
+        display: grid;
+        place-items: center;
+        font-size: 1.3rem;
+        &:hover {
+          background-color: rgba(0,0,0,.05);
+        }
+      }
+      .client-login-mobile{
+        font-size: 1.3rem;
+        height: 48px;
+        width: 48px;
+        display: grid;
+        color: #fff;
+        place-items: center;
+        &:hover {
+          background-color: rgba(0,0,0,.05);
+        }
+      }
+    }
+    .navbar-menu{
+      box-shadow: none !important;
+      @include touch {
+       background-color: #fff;
+      }
+      .navbar-end {
+        align-items: flex-end !important;
+        .navbar-item, .navbar-link{
+          line-height: 1 !important;
+        }
+        > .navbar-item {
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 800;
+          padding-block: 13.5px;
+          transition: all 200ms ease;
+          @include touch {
+            padding-block: 8px;
+          }
+          &:hover{
+            &:not(.has-dropdown.is-hoverable){
+              color: $yellow;
+            }
+          }
+          &.has-dropdown.is-hoverable{
+            padding-block: 0;
+            > .navbar-link{
+              padding-block: 13.5px;
+              color: #fff;
+              padding-right: 2.3rem !important;
+              @include touch {
+                padding-block: 8px;
+                color: $primary;
+                &:hover{
+                  color: $yellow;
+                }
+              }
+              @include desktop{
+                &::after{
+                  border-color: #fff;
+                  right: 0.5em !important;
+                }
+              }
+            }
+            > .navbar-dropdown{
+              > .navbar-item{
+                font-size: $size-6;
+                color: $primary;
+                @include desktop{
+                  &:hover{
+                    color: $grey;
+                  }
+                }
+                @include touch{
+                  &:hover{
+                    color: $yellow;
+                  }
+                }
+              }
+            }
+            @include desktop{
+              &:hover{
+                > .navbar-link{
+                  color: #fff;
+                  background-color: $primary !important;
+                  border-top-left-radius: 6px;
+                  border-top-right-radius: 6px;
+                }
+              }
+            }
+          }
+          
+        }
+      }
+      &.is-active{
+        @include desktop{
+          background-color: #fff;
+        }
+        @include touch {
+          padding-inline: 1.5rem;
+          padding-block: 2rem;
+          margin-top: 1rem;
+          border-top: 3px solid $primary;
+        }
+        .navbar-end {
+          margin-inline: -.5rem;
+          > .navbar-item {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  &.is-solid{
+    background: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding-block: 18px;
+    @include touch {
+      padding-block: 15px;
+    }
+    .nav-col{
+      border-color: $primary;
+    }
+    .navbar{
+      .navbar-brand{
+        .navbar-burger {
+          color: $primary;
+        }
+        .client-login-mobile{
+          color: $primary;
+        }
+      }
+      .navbar-menu{
+        .navbar-end {
+          > .navbar-item {
+            color: $primary;
+            &.has-dropdown.is-hoverable{
+              padding-block: 0;
+              > .navbar-link{
+                color: $primary;
+                &::after{
+                  border-color: $primary;
+                }
+              }
+              @include desktop{
+                &:hover{
+                  > .navbar-link{
+                    &::after{
+                      border-color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .top-nav{
+      ul{
+        li{
+          &:not(.phone){
+            a{
+              color: $primary;
+            }
+          }
+          &.client-login{
+            a{
+              &::before{
+                content: url('https://api.iconify.design/fa-solid/user.svg?color=%2326a9e0');
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

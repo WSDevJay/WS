@@ -1,0 +1,29 @@
+.home{
+
+    .marketing-text{
+        margin-top: -69px;
+        @include until-fullhd {
+            padding: 100px 1rem;
+        }
+        @include mobile {
+            padding: 80px 1rem;
+        }
+    }
+
+    .we-know-our-stuff{
+        margin-top: -37px;
+        @include mobile {
+            margin-top: -20px;
+        }
+    }
+
+    .businesses-who-trust-us{
+        margin-top: -5rem;
+    }
+
+    .blog-list{
+        margin-top: -4rem;
+    }
+    
+
+}

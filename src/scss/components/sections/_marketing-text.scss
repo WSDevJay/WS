@@ -1,0 +1,78 @@
+.marketing-text{
+    background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/curve.png) no-repeat top/101%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 3;
+    position: relative;
+    padding: 135px 1.5rem;
+    .description{
+        text-align: center;
+        color: $primary;
+        position: relative;
+        z-index: 10;
+        h2{
+            font-size: 68px;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 54px;
+            letter-spacing: -3px;
+            @include until-fullhd {
+                font-size: 51px;
+                line-height: 1;
+            }
+            @include until-widescreen {
+                font-size: 38.25px;
+            }
+            @include mobile {
+                font-size: 28.6875px;
+                letter-spacing: -1px;
+            }
+            @include until(500px) {
+                max-width: 300px;
+                margin-inline: auto;
+            }
+        }
+        h1{
+            font-size: 90px;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1;
+            letter-spacing: -3px;
+            @include until-fullhd {
+                font-size: 67px;
+            }
+            @include until-widescreen {
+                font-size: 50.25px;
+            }
+            @include mobile {
+                font-size: 37.6875px;
+                letter-spacing: -1px;
+            }
+        }
+        h3{
+            font-size: 63px;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-top: 47.25px;
+            margin-bottom: 51px;
+            @include until-fullhd {
+                font-size: 47.25px;
+                margin-top: 35.43px;
+                margin-bottom: 38.25px;
+            }
+            @include until-widescreen {
+                font-size: 35.4375px;
+                margin-top: 27px;
+                margin-bottom: 29px;
+            }
+            @include mobile {
+                font-size: 26.578px;
+            }
+            @include until(500px) {
+                max-width: 350px;
+                margin-inline: auto;
+            }
+        }
+    }
+}
+

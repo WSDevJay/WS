@@ -1,0 +1,61 @@
+.we-know-our-stuff-text{
+    color: #fff;
+    text-align: center;
+    h1{
+        font-size: $size-1;
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: -1px;
+        margin-bottom: 52.5px;
+        @include until-widescreen {
+            font-size: 36px;
+            margin-bottom: 39.375px;
+        }
+    }
+    .group-heading{
+        h2{
+            font-size: $size-3;
+            text-transform: uppercase;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -1px;
+            &:not(:last-child){
+                margin-bottom: 45px;
+            }
+            @include until-widescreen {
+                font-size: 24px;
+                &:not(:last-child){
+                    margin-bottom: 33.75px;
+                }
+            }
+        }
+    }
+    ul{
+        margin-top: 27.75px;
+        margin-bottom: 45px;
+        max-width: 559px;
+        margin-inline: auto;
+        @include until-widescreen {
+            margin-bottom: 26px;
+        }
+        text-align: left;
+        li{
+            font-size: $size-5;
+            font-weight: 900;
+            text-transform: uppercase;
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+            .icon{
+                color: $yellow;
+            }
+            @include until-widescreen {
+                font-size: $size-6;
+                &:not(:last-child){
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}

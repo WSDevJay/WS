@@ -1,0 +1,91 @@
+footer{
+    background-color: #fff;
+    padding-block: 75px;
+    padding-inline: 1.5rem;
+    @include mobile {
+        padding-block: 55px;
+    }
+    .say-hello{
+        color: $primary;
+        @include mobile {
+          text-align: center;
+        }
+        h4{
+            font-size: $size-4;
+            margin-bottom: 13.5px;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        ul{
+            li{
+                font-weight: 900;
+                text-transform: uppercase;
+                .icon-text{
+                    flex-wrap: nowrap;
+                }
+                @include mobile {
+                   justify-content: center;
+                }
+                &:not(:last-child){
+                    margin-bottom: 12.5px;
+                }
+            }
+        }
+    }
+    .partners{
+        display: grid;
+        align-items: end;
+        justify-items: end;
+        @include mobile {
+            justify-items: center;
+        }
+        &-logo{
+           display: flex;
+           align-items: center;
+           flex-wrap: wrap;
+           justify-content: flex-end;
+           gap: 13.5px;
+           @include mobile {
+            justify-content: center;
+           }
+        }
+    }
+    .sub-footer{
+        border-top: 3px solid $primary;
+        margin-top: 18px;
+        padding-top: 18px;
+        @include mobile {
+            margin-top: 28px;
+            padding-top: 28px;
+        }
+    }
+    .all-rights-reserved{
+        color: $primary;
+        h6{
+            text-transform: uppercase;
+            font-size: $size-7;
+            font-weight: 900;
+        }
+        @include mobile {
+           text-align: center;
+        }
+    }
+    .socials{
+        display: grid;
+        justify-items: end;
+        @include mobile {
+           justify-items: center;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            li{
+                a{
+                    font-size: 1.2rem;
+                    transition: all 200ms ease;
+                }
+            }
+        }
+    }
+}

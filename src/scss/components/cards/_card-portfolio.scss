@@ -1,0 +1,84 @@
+.card.portfolio{
+    background-color: $grey;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /*
+    &:hover .card-content::before{
+        transform: scaleY(1);
+    }
+    &:hover .card-content .card-content-inner a.button{
+        background-color: #fff;
+    }
+    &:hover .card-content .card-content-inner .portfolio-tag .seperator{
+        color: #fff !important;
+    }
+    .card-image{ }
+    */
+    .card-content{
+        position: relative;
+        padding-top: 2.3rem;
+        flex-grow: 1;
+        display: flex;
+        .card-divider{
+            position: absolute;
+            transform: translateY(-1rem);
+            top: 0;
+            width: 100%;
+            left: 0;
+        }
+        /*
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #00b2e6;
+            transform-origin: 50% 0;
+            transform: scaleY(0);
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+          }
+          */
+        .card-content-inner{
+            position: relative;
+            z-index: 3;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            .tag{
+                text-transform: uppercase;
+                margin-bottom: 4px;
+                .seperator{
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease-out;
+                    color: $primary;
+                }
+            }
+            h4{
+                font-weight: 900;
+                font-size: $size-5;
+                text-transform: uppercase;
+                margin-bottom: 13.5px;
+            }
+            p{
+                line-height: 1.2;
+                margin-bottom: 33.75px;
+            }
+            a.button{
+                margin-top: auto;
+                height: 36px;
+                font-size: $size-7;
+                /*
+                &:hover{
+                    background-color: $grey;
+                }*/
+            }
+        }
+    }
+  }

@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home</title>
+      <link rel="stylesheet" href="/marketplace_builder/assets/css/main-2022.min.css">
+      <link rel="stylesheet" media="print" href="https://uploads.prod01.london.platform-os.com/instances/190/assets/fonts/fonts.css" onload="this.media='all'">
+      <script src="https://uploads.prod01.london.platform-os.com/instances/190/assets/js/vendor/iconify.min.js?updated=1662609857000"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   </head>
+   <body>
+      <header class="is-fixed-top">
+         <div class="container">
+            <div class="columns m-0 is-align-items-end">
+               <div class="column is-narrow logo-col is-hidden-touch">
+                  <a href="/">
+                  <img class="logo is-light" src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/ws-logo-white.png" alt="Website Success Logo">
+                  <img class="logo is-dark" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/ws-logo-colour.svg" alt="Website Success Logo">
+                  </a>
+               </div>
+               <div class="column nav-col">
+                  <div class="top-nav is-hidden-touch">
+                     <ul>
+                        <li class="phone">
+                           <a href="">
+                           <span class="iconify" data-icon="fa-solid:phone"></span>
+                           01243 888 555 
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <span class="iconify" data-icon="fa-solid:user"></span>
+                           CLIENT LOGIN
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <nav class="navbar is-transparent" aria-label="main navigation">
+                     <div class="navbar-brand">
+                        <div class="logo-col is-hidden-desktop">
+                           <a href="/">
+                           <img class="logo-mobile is-light" src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/ws-logo-white.png" alt="Website Success Logo">
+                           <img class="logo-mobile is-dark" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/ws-logo-colour.svg" alt="Website Success Logo">
+                           </a>
+                        </div>
+                        <a href="" class="phone-mobile is-hidden-desktop">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512">
+                              <path fill="currentColor" d="m493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464c0-11.2-7.7-20.9-18.6-23.4z"/>
+                           </svg>
+                        </a>
+                        <a href="" class="client-login-mobile is-hidden-desktop">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512">
+                              <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/>
+                           </svg>
+                        </a>
+                        <a role="button" class="navbar-burger burger is-hidden-desktop" aria-label="menu" aria-expanded="false" data-target="navbar">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h22M5 16h22M5 24h22"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" class="is-hidden" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                              <path fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/>
+                           </svg>
+                        </a>
+                     </div>
+                     <div id="navbar" class="navbar-menu">
+                        <div class="navbar-end">
+                           <a class="navbar-item is-size-4" href="/design">Design</a>
+                           <a class="navbar-item is-size-4" href="/build">Build</a>
+                           <div class="navbar-item is-size-4 has-dropdown is-hoverable">
+                              <a class="navbar-link" href="/market">
+                              Market
+                              </a>
+                              <div class="navbar-dropdown">
+                                 <a class="navbar-item">
+                                 ppc
+                                 </a>
+                                 <a class="navbar-item">
+                                 seo
+                                 </a>
+                                 <a class="navbar-item">
+                                 content
+                                 </a>
+                                 <a class="navbar-item">
+                                 strategy
+                                 </a>
+                              </div>
+                           </div>
+                           <a class="navbar-item" href="/portfolio">Portfolio</a>
+                           <a class="navbar-item" href="/about">About</a>
+                           <a class="navbar-item" href="/blogs">Blog</a>
+                           <a class="navbar-item" href="/contact">Contact</a>
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main>
+         <div class="home">
+            <section class="hero-main">
+               <div class="hero-body">
+                  <div class="hero-content">
+                     <div class="brand-message">
+                        <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/hero-brand-message.png">
+                     </div>
+                     <div class="arrow-button">
+                        <a href="">
+                        <span class="iconify" data-icon="fa-solid:chevron-circle-down"></span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="marketing-text">
+               <div class="container">
+                  <div class="description">
+                     <h2>But what good is a website</h2>
+                     <h1>without marketing?</h1>
+                     <h3>So, we do that too. All of it. <br>
+                        SEO, advertising, re-marketing, PPC,
+                        social media, email marketing…
+                     </h3>
+                     <a href="/" class="button is-dark mx-auto">
+                        <div class="icon-text">
+                           <span>Ready? shall we have a chat</span>
+                           <span class="icon">
+                           <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                           </span>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </section>
+            <section class="we-know-our-stuff">
+               <div class="container">
+                  <div class="we-know-our-stuff-text">
+                     <h1>We know our stuff</h1>
+                     <div class="group-heading">
+                        <h2>We’re not just about the words, we’re about the actions – and most importantly, we’re about the results!</h2>
+                        <h2>We use in-house knowledge – we don’t outsource anything</h2>
+                        <h2>Our extensive experience is bred from when:</h2>
+                     </div>
+                     <ul>
+                        <li>
+                           <span class="icon-text">
+                           <span class="icon">
+                           <span class="iconify" data-icon="bi:check-circle-fill"></span>
+                           </span>
+                           <span>Websites first became ‘a thing’</span>
+                           </span>
+                        </li>
+                        <li>
+                           <span class="icon-text">
+                           <span class="icon">
+                           <span class="iconify" data-icon="bi:check-circle-fill"></span>
+                           </span>
+                           <span>‘Marketing strategy’ stopped being a dirty word</span>
+                           </span>
+                        </li>
+                        <li>
+                           <span class="icon-text">
+                           <span class="icon">
+                           <span class="iconify" data-icon="bi:check-circle-fill"></span>
+                           </span>
+                           <span>SEO invented itself!</span>
+                           </span>
+                        </li>
+                        <li>
+                           <span class="icon-text">
+                           <span class="icon">
+                           <span class="iconify" data-icon="bi:check-circle-fill"></span>
+                           </span>
+                           <span>Digital marketing meant doing stuff online – before it started to drive strategies</span>
+                           </span>
+                        </li>
+                        <li>
+                           <span class="icon-text">
+                           <span class="icon">
+                           <span class="iconify" data-icon="bi:check-circle-fill"></span>
+                           </span>
+                           <span>Social media was adopted by businesses</span>
+                           </span>
+                        </li>
+                        <li>
+                           <span class="icon-text">
+                           <span class="icon">
+                           <span class="iconify" data-icon="bi:check-circle-fill"></span>
+                           </span>
+                           <span>Online advertising grew up and needed sensible, experienced people to manage it!</span>
+                           </span>
+                        </li>
+                     </ul>
+                     <a href="/" class="button is-yellow mx-auto">
+                        <div class="icon-text">
+                           <span>More about how we work</span>
+                           <span class="icon">
+                           <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                           </span>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="nick-quote">
+                     <div class="columns">
+                        <div class="column is-8-desktop is-offset-3-desktop is-6-widescreen is-offset-3-widescreen nick-quote-col">
+                           <figure class="nick">
+                              <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/nick-fenmor-collins.png">
+                           </figure>
+                           <div class="quote-box">
+                              <p class="quote">It’s all about your Website Success. We’ll help your business achieve more by understanding your customers’ motivation and delivering visual messages and functionality that fulfils their needs. We design beautiful websites that work for your business – and we market them for you.</p>
+                              <img class="signature" src="https://websitesuccess.mo.cloudinary.net/ws/images/build/nick-signature.png" alt="Nick Fenmor Collins">
+                              <p class="founder">Nick Fenmor Collins - Founder</p>
+                              <a href="/" class="button is-dark">
+                                 <div class="icon-text">
+                                    <span>GET STARTED</span>
+                                    <span class="icon">
+                                    <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                    </span>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="video-container">
+                              <iframe class="video" src="https://cdn.jwplayer.com/players/wPNsUoKL-gU8I0ynt.html" frameborder="0"></iframe>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="our-latest-creation">
+               <div class="container">
+                  <h3 class="heading blue">our latest creations</h3>
+                  <div class="columns is-mobile is-multiline portfolio">
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card portfolio" style="height: 100%;">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/curves/card-curve--blue.png?updated=1614096923">  
+                              <div class="card-content-inner">
+                                 <div class="tag">
+                                    <span>Design</span>
+                                    <span class="seperator">/</span>
+                                    <span>Build</span>
+                                 </div>
+                                 <h4>manta recruitment</h4>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                 </p>
+                                 <a href="/" class="button is-blue">
+                                    <div class="icon-text">
+                                       <span>View Project</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card portfolio" style="height: 100%;">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/curves/card-curve--blue.png?updated=1614096923">  
+                              <div class="card-content-inner">
+                                 <div class="tag">
+                                    <span>Design</span>
+                                    <span class="seperator">/</span>
+                                    <span>Build</span>
+                                 </div>
+                                 <h4>manta recruitment</h4>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                 </p>
+                                 <a href="/" class="button is-blue">
+                                    <div class="icon-text">
+                                       <span>View Project</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card portfolio" style="height: 100%;">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/curves/card-curve--blue.png?updated=1614096923">  
+                              <div class="card-content-inner">
+                                 <div class="tag">
+                                    <span>Design</span>
+                                    <span class="seperator">/</span>
+                                    <span>Build</span>
+                                 </div>
+                                 <h4>manta recruitment</h4>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                 </p>
+                                 <a href="/" class="button is-blue">
+                                    <div class="icon-text">
+                                       <span>View Project</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card portfolio" style="height: 100%;">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/curves/card-curve--blue.png?updated=1614096923">  
+                              <div class="card-content-inner">
+                                 <div class="tag">
+                                    <span>Design</span>
+                                    <span class="seperator">/</span>
+                                    <span>Build</span>
+                                 </div>
+                                 <h4>manta recruitment</h4>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                 </p>
+                                 <a href="/" class="button is-blue">
+                                    <div class="icon-text">
+                                       <span>View Project</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card portfolio" style="height: 100%;">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/curves/card-curve--blue.png?updated=1614096923">  
+                              <div class="card-content-inner">
+                                 <div class="tag">
+                                    <span>Design</span>
+                                    <span class="seperator">/</span>
+                                    <span>Build</span>
+                                 </div>
+                                 <h4>manta recruitment</h4>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                 </p>
+                                 <a href="/" class="button is-blue">
+                                    <div class="icon-text">
+                                       <span>View Project</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card portfolio" style="height: 100%;">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/curves/card-curve--blue.png?updated=1614096923">  
+                              <div class="card-content-inner">
+                                 <div class="tag">
+                                    <span>Design</span>
+                                    <span class="seperator">/</span>
+                                    <span>Build</span>
+                                 </div>
+                                 <h4>manta recruitment</h4>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...
+                                 </p>
+                                 <a href="/" class="button is-blue">
+                                    <div class="icon-text">
+                                       <span>View Project</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="/" class="button is-dark mx-auto">
+                     <div class="icon-text">
+                        <span>VIEW MORE CREATIONS</span>
+                        <span class="icon">
+                        <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                        </span>
+                     </div>
+                  </a>
+               </div>
+            </section>
+            <section class="businesses-who-trust-us">
+               <h3 class="heading -- blue -- px-5">businesses who trust us with their brand</h3>
+               <div class="brands">
+                  <div class="swiper">
+                     <div class="swiper-wrapper is-align-items-center">
+                        <div class="swiper-slide">
+                           <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/brands/money-if-you-die.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/brands/n-pacey-ltd.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/brands/octicards.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/brands/philip-e-west.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/brands/slugs-a-gogo.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/brands/southdown-velo.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/brands/philip-e-west.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/brands/octicards.png" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="the-website-success-way">
+               <div class="container is-max-widescreen">
+                  <h3 class="heading -- dark">THE WEBSITE SUCCESS WAY</h3>
+                  <div class="columns is-multiline">
+                     <div class="column is-6 is-4-widescreen">
+                        <div class="item">
+                           <div class="columns">
+                              <div class="column is-narrow">
+                                 <img  src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/icons/icon01.png" >
+                              </div>
+                              <div class="column">
+                                 <h4>Clear layout and Navigation</h4>
+                                 <p>A site that has a clear structure which elements where visitors expect them and a navigation that allows users to move through the site with ease.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-6 is-4-widescreen">
+                        <div class="item">
+                           <div class="columns">
+                              <div class="column is-narrow">
+                                 <img  src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/icons/icon02.png" >
+                              </div>
+                              <div class="column">
+                                 <h4>Designed For Your Visitors</h4>
+                                 <p>Your site will be designed to deliver the information your visitors need to help them reach your conversion goals</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-6 is-4-widescreen">
+                        <div class="item">
+                           <div class="columns">
+                              <div class="column is-narrow">
+                                 <img  src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/icons/icon03.png" >
+                              </div>
+                              <div class="column">
+                                 <h4>Designed to be Responsive</h4>
+                                 <p>Your site will be designed to work across platforms from phones to tablets to desktops...and allowing it to be coded for any platform, eFusion, Wordpress, Shopify, Magento, etc.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-6 is-4-widescreen">
+                        <div class="item">
+                           <div class="columns">
+                              <div class="column is-narrow">
+                                 <img  src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/icons/icon04.png" >
+                              </div>
+                              <div class="column">
+                                 <h4>Designed to Convert</h4>
+                                 <p>A site designed to convert ... whether you want visitors to pick up the phone, book an event or a meeting, fill a form or buy your products.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-6 is-4-widescreen">
+                        <div class="item">
+                           <div class="columns">
+                              <div class="column is-narrow">
+                                 <img  src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/icons/icon05.png" >
+                              </div>
+                              <div class="column">
+                                 <h4>Full Property Rights</h4>
+                                 <p>You'll have full 'Intellectual Property Rights' on the designs that we create for you...for you to use in any format you choose in the future.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-6 is-4-widescreen">
+                        <div class="item">
+                           <div class="columns">
+                              <div class="column is-narrow">
+                                 <img  src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/icons/icon06.png" >
+                              </div>
+                              <div class="column">
+                                 <h4>Packaged Design Files</h4>
+                                 <p>Once approved your designs are packaged ready for the developer of your choice to start coding. All design assets including fonts and images will be included.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-6 is-4-widescreen">
+                        <div class="item">
+                           <div class="columns">
+                              <div class="column is-narrow">
+                                 <img  src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/icons/icon07.png" >
+                              </div>
+                              <div class="column">
+                                 <h4>Unique Bespoke Design</h4>
+                                 <p>Your bespoke design will be unique to you and your brand's personality. It will be aligned to your visitors and the journey you'd like them to take with you. We never use cumbersome templates.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-6 is-4-widescreen">
+                        <div class="item">
+                           <div class="columns">
+                              <div class="column is-narrow">
+                                 <img  src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/icons/icon08.png" >
+                              </div>
+                              <div class="column">
+                                 <h4>Unlimited Design Revisions</h4>
+                                 <p>You'll get 'unlimited design revisions' until the site is approved for coding (As long as revisions are in-line with the original brief)</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-6 is-4-widescreen">
+                        <div class="item">
+                           <div class="columns">
+                              <div class="column is-narrow">
+                                 <img  src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/icons/icon09.png" >
+                              </div>
+                              <div class="column">
+                                 <h4>World-class design team</h4>
+                                 <p>A site designed by our world-class designers, trusted by hundreds of businesses and using the very best design software and the latest conversion techniques.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <section class="blog-list">
+               <div class="container">
+                  <h3 class="heading white">hints, tips & happenings</h3>
+                  <div class="columns blog is-mobile is-multiline">
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card blog">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/card-curve--yellow-02.png"> 
+                              <div class="card-content-inner">
+                                 <div class="author">
+                                    <span>Nov 02, 2020</span>
+                                    <span class="seperator">/</span>
+                                    <span>Jacob Turrell</span>
+                                 </div>
+                                 <h4>HOW CAN I GENERATE MORE LEADS THROUGH EMAIL MARKETING?</h4>
+                                 <a href="/" class="button is-dark-blue">
+                                    <div class="icon-text">
+                                       <span>Read blog</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card blog">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/card-curve--yellow-02.png"> 
+                              <div class="card-content-inner">
+                                 <div class="author">
+                                    <span>Nov 02, 2020</span>
+                                    <span class="seperator">/</span>
+                                    <span>Jacob Turrell</span>
+                                 </div>
+                                 <h4>HOW CAN I GENERATE MORE LEADS THROUGH EMAIL MARKETING?</h4>
+                                 <a href="/" class="button is-dark-blue">
+                                    <div class="icon-text">
+                                       <span>Read blog</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card blog">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/card-curve--yellow-02.png"> 
+                              <div class="card-content-inner">
+                                 <div class="author">
+                                    <span>Nov 02, 2020</span>
+                                    <span class="seperator">/</span>
+                                    <span>Jacob Turrell</span>
+                                 </div>
+                                 <h4>HOW CAN I GENERATE MORE LEADS THROUGH EMAIL MARKETING?</h4>
+                                 <a href="/" class="button is-dark-blue">
+                                    <div class="icon-text">
+                                       <span>Read blog</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card blog">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/card-curve--yellow-02.png"> 
+                              <div class="card-content-inner">
+                                 <div class="author">
+                                    <span>Nov 02, 2020</span>
+                                    <span class="seperator">/</span>
+                                    <span>Jacob Turrell</span>
+                                 </div>
+                                 <h4>HOW CAN I GENERATE MORE LEADS THROUGH EMAIL MARKETING?</h4>
+                                 <a href="/" class="button is-dark-blue">
+                                    <div class="icon-text">
+                                       <span>Read blog</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card blog">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/card-curve--yellow-02.png"> 
+                              <div class="card-content-inner">
+                                 <div class="author">
+                                    <span>Nov 02, 2020</span>
+                                    <span class="seperator">/</span>
+                                    <span>Jacob Turrell</span>
+                                 </div>
+                                 <h4>HOW CAN I GENERATE MORE LEADS THROUGH EMAIL MARKETING?</h4>
+                                 <a href="/" class="button is-dark-blue">
+                                    <div class="icon-text">
+                                       <span>Read blog</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card blog">
+                           <a href="/" class="card-image">
+                              <figure class="image is-4by3">
+                                 <img 
+                                    src="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto" 
+                                    srcset="https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_400,h_300,c_fill,g_auto 400w,
+                                    https://websitesuccess.mo.cloudinary.net/ws/images/blog/Is-email-marketing-effective.jpeg?tx=w_800,h_600,c_fill,g_auto 800w"
+                                    sizes="(max-width: 600px) 400px,
+                                    800px"
+                                    >
+                              </figure>
+                           </a>
+                           <div class="card-content">
+                              <img class="card-divider" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/card-curve--yellow-02.png"> 
+                              <div class="card-content-inner">
+                                 <div class="author">
+                                    <span>Nov 02, 2020</span>
+                                    <span class="seperator">/</span>
+                                    <span>Jacob Turrell</span>
+                                 </div>
+                                 <h4>HOW CAN I GENERATE MORE LEADS THROUGH EMAIL MARKETING?</h4>
+                                 <a href="/" class="button is-dark-blue">
+                                    <div class="icon-text">
+                                       <span>Read blog</span>
+                                       <span class="icon">
+                                       <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                       </span>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="/" class="button is-dark mx-auto">
+                     <div class="icon-text">
+                        <span>VIEW all news</span>
+                        <span class="icon">
+                        <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                        </span>
+                     </div>
+                  </a>
+               </div>
+            </section>
+         </div>
+      </main>
+      <footer>
+         <div class="container">
+            <div class="columns">
+               <div class="column is-6 say-hello">
+                  <h4>Say Hello</h4>
+                  <ul>
+                     <li>
+                        <span class="icon-text">
+                        <span class="icon"><span class="iconify" data-icon="fa-solid:phone"></span></span>
+                        01243 888 555
+                        </span>
+                     </li>
+                     <li>
+                        <span class="icon-text">
+                        <span class="icon"><span class="iconify" data-icon="fa6-solid:location-dot"></span></span>
+                        30 The Hornet, Chichester, West Sussex, PO19 7JG
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="column is-6 partners">
+                  <div class="partners-logo">
+                     <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/google-partner.png" alt="google-partner">
+                     <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/trusted-suplier.png" alt="trusted-suplier">
+                     <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/best-business-enabler.png" alt="best-business-enabler">
+                  </div>
+               </div>
+            </div>
+            <div class="sub-footer">
+               <div class="columns is-vcentered">
+                  <div class="column is-6 all-rights-reserved">
+                     <h6>© Website Success. All Rights Reserved.</h6>
+                  </div>
+                  <div class="column is-6 socials">
+                     <ul>
+                        <li>
+                           <a href=""><span class="iconify" data-icon="fa-brands:facebook-square"></span></a>
+                        </li>
+                        <li>
+                           <a href=""><span class="iconify" data-icon="fa-brands:twitter"></span></a>
+                        </li>
+                        <li>
+                           <a href=""><span class="iconify" data-icon="fa-brands:linkedin"></span></a>
+                        </li>
+                        <li>
+                           <a href=""><span class="iconify" data-icon="fa-brands:instagram"></span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script>
+         const swiper = new Swiper('.swiper', {
+             loop: true,
+             slidesPerView: 2,
+             spaceBetween: 30,
+             centeredSlides: true,
+             breakpoints: {
+                 '500': {
+                 slidesPerView: 3,
+                 spaceBetween: 40,
+                 },
+                 '768': {
+                 slidesPerView: 4,
+                 spaceBetween: 40,
+                 },
+                 '1024': {
+                 slidesPerView: 5,
+                 spaceBetween: 40,
+                 },
+                 '1216': {
+                 slidesPerView: 6,
+                 spaceBetween: 40,
+                 },
+                 '1408': {
+                 slidesPerView: 7,
+                 spaceBetween: 60,
+                 },
+             },
+             autoplay: {
+             delay: 5000,
+             speed: 3000,
+             },
+         });
+      </script>
+      <script>
+         document.addEventListener('DOMContentLoaded', () => {
+             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+             if ($navbarBurgers.length > 0) {
+                 $navbarBurgers.forEach(el => {
+                     el.addEventListener('click', () => {
+                         const target = el.dataset.target;
+                         const $target = document.getElementById(target);
+                         el.classList.toggle('is-active');
+                         $target.classList.toggle('is-active');
+                         console.log(el);
+                         if(el.classList.contains('is-active')){
+                             el.children[0].classList.add('is-hidden');
+                             el.children[1].classList.remove('is-hidden');
+                         }else{
+                             el.children[0].classList.remove('is-hidden');
+                             el.children[1].classList.add('is-hidden');
+                         }
+                     });
+                 });
+             }
+         });
+      </script>
+      <script>
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+           if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+             document.querySelector("header").classList.add("is-solid");
+             document.querySelector(".logo.is-light").style.display = "none";
+             document.querySelector(".logo.is-dark").style.display = "block";
+             document.querySelector(".logo-mobile.is-light").style.display = "none";
+             document.querySelector(".logo-mobile.is-dark").style.display = "block";
+           } else {
+             document.querySelector("header").classList.remove("is-solid");
+             document.querySelector(".logo.is-dark").style.display = "none";
+             document.querySelector(".logo.is-light").style.display = "block";
+             document.querySelector(".logo-mobile.is-dark").style.display = "none";
+             document.querySelector(".logo-mobile.is-light").style.display = "block";
+           }
+         }
+      </script>
+   </body>
+</html>

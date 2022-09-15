@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+// Set your brand colors
+$blue: #31A7E0;
+$yellow: #F0E100;
+$grey: #313D47;
+$light: #EBECEC;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito Sans", sans-serif;
+$primary: $blue;
+$link: $blue;
+$border-hover: $grey;
+
+// Update Bulma's components variables
+$navbar-background-color: transparent;
+$navbar-height: auto;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-hover-color: $yellow;
+
+//Font-sizes
+$size-1: 3rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: .875rem;
+$size-8: .75rem;
+
+// Import only what is needed from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/grid/columns.sass";
+
+@import "../../node_modules/bulma/sass/helpers/color.sass";
+@import "../../node_modules/bulma/sass/helpers/spacing.sass";
+@import "../../node_modules/bulma/sass/helpers/typography.sass";
+@import "../../node_modules/bulma/sass/helpers/visibility.sass";
+@import "../../node_modules/bulma/sass/helpers/flexbox.sass";
+
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/content.sass";
+@import "../../node_modules/bulma/sass/elements/icon.sass";
+@import "../../node_modules/bulma/sass/elements/image.sass";
+
+@import "../../node_modules/bulma/sass/form/_all.sass";
+
+@import "../../node_modules/bulma/sass/components/card.sass";
+@import "../../node_modules/bulma/sass/components/media.sass";
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/components/pagination.sass";
+
+//Overwrite Bulma's Components
+.icon-text{
+  flex-wrap: nowrap;
+}
+
+//Global
+section {
+  position: relative;
+}
+
+.button, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea {
+  border-width: 3px;
+}
+
+
+// Import components
+@import "components/common/header";
+@import "components/common/footer";
+
+@import "components/buttons/main-buttons";
+
+@import "components/widgets/author";
+@import "components/widgets/pagination";
+
+@import "components/headings/heading-section";
+
+@import "components/cards/card-blog";
+@import "components/cards/card-portfolio";
+
+@import "components/sections/hero-main";
+@import "components/sections/marketing-text";
+@import "components/sections/we-know-our-stuff-text";
+@import "components/sections/nick-quote";
+@import "components/sections/our-latest-creation";
+@import "components/sections/businesses-who-trust-us";
+@import "components/sections/the-website-success-way";
+@import "components/sections/blog-list";
+
+@import "components/multi-sections/we-know-our-stuff";
+
+// Import pages
+@import "pages/home";
+
+
+
+

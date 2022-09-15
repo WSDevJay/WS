@@ -1,0 +1,27 @@
+.the-website-success-way{
+    background-color: #ebecec;
+    padding-top: 52.5px;
+    padding-bottom: 144px;
+    padding-inline: 1.5rem;
+
+    .item{
+        border-top: 2px solid $primary;
+        padding-top: .75rem;
+        padding-bottom: 1.5rem;
+        @include mobile { 
+            padding-top: 1rem;
+        }
+
+        h4{
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: $size-5;
+            line-height: 1.2;
+            margin-bottom: .5rem;
+        }
+        p{
+            font-weight: 900;
+            line-height: 1.2;
+        }
+    }
+}

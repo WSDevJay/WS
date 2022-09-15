@@ -1,0 +1,23 @@
+.pagination-link, .pagination-next, .pagination-previous {
+  font-weight: 900;
+  text-transform: uppercase;
+  max-width: max-content;
+  &:not([disabled]):hover {
+    border-color: $border-hover;
+  }
+}
+
+.pagination-next:not([disabled]), .pagination-previous:not([disabled]) {
+  background-color: $blue;
+  border-color: $blue;
+  color: white;
+  &:hover {
+    background-color: $grey;
+    border-color: $grey;
+    color: $blue;
+  }
+}
+
+.pagination-link.is-current {
+  border-color: $grey;
+}

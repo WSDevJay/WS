@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link rel="stylesheet" href="/marketplace_builder/assets/css/main-2022.min.css">
+    <link rel="stylesheet" media="print" href="https://uploads.prod01.london.platform-os.com/instances/190/assets/fonts/fonts.css" onload="this.media='all'">
+    <script src="https://uploads.prod01.london.platform-os.com/instances/190/assets/js/vendor/iconify.min.js?updated=1662609857000"></script>
+</head>
+<body>
+
+  <!-- Component Starts Here-->
+  <footer>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6 say-hello">
+          <h4>Say Hello</h4>
+          <ul>
+            <li>
+              <span class="icon-text">
+                <span class="icon"><span class="iconify" data-icon="fa-solid:phone"></span></span>
+                  01243 888 555
+              </span>
+            </li>
+            <li>
+              <span class="icon-text">
+                <span class="icon"><span class="iconify" data-icon="fa6-solid:location-dot"></span></span>
+              30 The Hornet, Chichester, West Sussex, PO19 7JG
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="column is-6 partners">
+          <div class="partners-logo">
+              <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/google-partner.png" alt="google-partner">
+              <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/trusted-suplier.png" alt="trusted-suplier">
+              <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/best-business-enabler.png" alt="best-business-enabler">
+          </div>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="columns is-vcentered">
+          <div class="column is-6 all-rights-reserved">
+              <h6>© Website Success. All Rights Reserved.</h6>
+          </div>
+          <div class="column is-6 socials">
+            <ul>
+              <li>
+                <a href=""><span class="iconify" data-icon="fa-brands:facebook-square"></span></a>
+              </li>
+              <li>
+                <a href=""><span class="iconify" data-icon="fa-brands:twitter"></span></a>
+              </li>
+              <li>
+                <a href=""><span class="iconify" data-icon="fa-brands:linkedin"></span></a>
+              </li>
+              <li>
+                <a href=""><span class="iconify" data-icon="fa-brands:instagram"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+      let tl = gsap.timeline({ defaults: { ease: "power0.inOut", duration: 2.2}});
+      tl.to('.hero', {
+          transform: "scale(1.00)",
+          duration: 2,
+        })
+        .from('.brand-message > span', {
+          transform: "translateY(1ex)",
+          opacity: 0,
+          stagger: 0.1,
+          duration: 0.2,
+        }, "-=1.5")
+        .from('.hero .title, .hero .subtitle', {
+          opacity: 0,
+          y: 25,
+          stagger: 0.1,
+          duration: 0.5
+        }, "-=1.5")
+        .from('.hero hr', {
+          width: 0,
+          duration: 0.1
+        }, "-=0.5")
+        .to('.navbar', {
+          y: 0,
+          opacity: 1,
+          duration: 0.2,
+        }, "-=1.75")
+  
+      ScrollTrigger.batch(".card", {
+        // interval: 0.1, // time window (in seconds) for batching to occur. 
+        batchMax: 3,   // maximum batch size (targets)
+        onEnter: batch => gsap.to(batch, {autoAlpha: 1, y: 0, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', stagger: 0.1}),
+        // also onLeave, onEnterBack, and onLeaveBack
+        // also most normal ScrollTrigger values like start, end, etc.
+      });
+  
+      ScrollTrigger.batch(".content > *", {
+        // interval: 0.1, // time window (in seconds) for batching to occur. 
+        batchMax: 1,   // maximum batch size (targets)
+        onEnter: batch => gsap.from(batch, {autoAlpha: 0, y: 50, stagger: 0.2}),
+        // also onLeave, onEnterBack, and onLeaveBack
+        // also most normal ScrollTrigger values like start, end, etc.
+      });
+  
+  </script>
+  <!-- Component Ends Here-->
+    
+</body>
+</html>
