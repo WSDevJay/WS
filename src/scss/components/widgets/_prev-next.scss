@@ -1,0 +1,76 @@
+.prev-next-section{
+    background-color: $light;
+    padding: 100px 1.5rem 150px;
+
+    .prev-next{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+        a.prev,a.next{
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            @include mobile {
+                align-items: center;
+                gap: .7rem;
+            }
+            &:hover{
+               >div{
+                color: $primary;
+               }
+            }
+            >span{
+                font-size: 2rem;
+                color: $primary;
+                display: grid;
+                place-items: center;
+                @include until-widescreen {
+                    font-size: 1.8rem;
+                }
+                @include mobile {
+                    font-size: 1.5rem;
+                }
+            }
+            div{
+                color: $grey;
+                transition: all 200ms ease;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                .control{
+                    display: none;
+                    @include mobile {
+                        display: block;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                    }
+                }
+                p{
+                    font-size: $size-7;
+                    @include mobile {
+                        display: none;
+                    }
+                }
+                h5{
+                    font-size: $size-5;
+                    font-weight: 900;
+                    max-width: 297px;
+                    line-height: 1;
+                    @include until-widescreen {
+                        font-size: $size-6;
+                        line-height: 1.1;
+                    }
+                    @include mobile {
+                        display: none;
+                    }
+                }
+            }
+        }
+        a.next{
+            div{
+                text-align: right;
+            }
+        }
+    }
+}
