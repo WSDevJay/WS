@@ -1,0 +1,62 @@
+.hero-inner-pages{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 15, 30, 1) 0%, rgba(0, 15, 30, 0) 33%, rgba(0, 0, 0, 0) 100%), url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/inner-pages-hero-bg.png) no-repeat center center / cover;  
+    &::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 90rem;
+      background: url(https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/graphic-circles-inner-pages-hero.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 0;
+      top: 0;
+      z-index: 10;
+    } 
+    .hero-body{
+        padding-top: 200px;
+        padding-bottom: 158px;
+        padding-inline: 1.5rem;
+        .hero-content{
+            .description{
+                text-align: center;
+                color: #fff;
+                h1{
+                    font-size: $size-1;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    line-height: 1.1;
+                    @include until-fullhd {
+                        font-size: $size-2;
+                    }
+                    @include until-widescreen {
+                        font-size: $size-3;
+                    }
+                }
+                .line{
+                    height: 1px;
+                    width: 183px;
+                    background-color: $yellow;
+                    margin-inline: auto;
+                    margin-block: 38px;
+                    @include until-widescreen {
+                        margin-block: 28px;
+                    }
+                }
+                p{
+                    max-width: 1138px;
+                    margin-inline: auto;
+                    font-size: $size-4;
+                    line-height: 1.2;
+                    font-weight: 200;
+                    @include touch {
+                        font-size: $size-5;
+                    }
+                }
+            }
+        }
+    }
+}

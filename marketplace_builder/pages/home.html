@@ -10,6 +10,82 @@
       <script src="https://uploads.prod01.london.platform-os.com/instances/190/assets/js/vendor/iconify.min.js?updated=1662609857000"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
       <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script>
+         const swiper = new Swiper('.swiper', {
+             loop: true,
+             slidesPerView: 2,
+             spaceBetween: 30,
+             centeredSlides: true,
+             breakpoints: {
+                 '500': {
+                 slidesPerView: 3,
+                 spaceBetween: 40,
+                 },
+                 '768': {
+                 slidesPerView: 4,
+                 spaceBetween: 40,
+                 },
+                 '1024': {
+                 slidesPerView: 5,
+                 spaceBetween: 40,
+                 },
+                 '1216': {
+                 slidesPerView: 6,
+                 spaceBetween: 40,
+                 },
+                 '1408': {
+                 slidesPerView: 7,
+                 spaceBetween: 60,
+                 },
+             },
+             autoplay: {
+             delay: 5000,
+             speed: 3000,
+             },
+         });
+      </script>
+      <script>
+         document.addEventListener('DOMContentLoaded', () => {
+             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+             if ($navbarBurgers.length > 0) {
+                 $navbarBurgers.forEach(el => {
+                     el.addEventListener('click', () => {
+                         const target = el.dataset.target;
+                         const $target = document.getElementById(target);
+                         el.classList.toggle('is-active');
+                         $target.classList.toggle('is-active');
+                         console.log(el);
+                         if(el.classList.contains('is-active')){
+                             el.children[0].classList.add('is-hidden');
+                             el.children[1].classList.remove('is-hidden');
+                         }else{
+                             el.children[0].classList.remove('is-hidden');
+                             el.children[1].classList.add('is-hidden');
+                         }
+                     });
+                 });
+             }
+         });
+      </script>
+      <script>
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+           if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+             document.querySelector("header").classList.add("is-solid");
+             document.querySelector(".logo.is-light").style.display = "none";
+             document.querySelector(".logo.is-dark").style.display = "block";
+             document.querySelector(".logo-mobile.is-light").style.display = "none";
+             document.querySelector(".logo-mobile.is-dark").style.display = "block";
+           } else {
+             document.querySelector("header").classList.remove("is-solid");
+             document.querySelector(".logo.is-dark").style.display = "none";
+             document.querySelector(".logo.is-light").style.display = "block";
+             document.querySelector(".logo-mobile.is-dark").style.display = "none";
+             document.querySelector(".logo-mobile.is-light").style.display = "block";
+           }
+         }
+      </script>
    </head>
    <body>
       <header class="is-fixed-top">
@@ -898,81 +974,5 @@
             </div>
          </div>
       </footer>
-      <script>
-         const swiper = new Swiper('.swiper', {
-             loop: true,
-             slidesPerView: 2,
-             spaceBetween: 30,
-             centeredSlides: true,
-             breakpoints: {
-                 '500': {
-                 slidesPerView: 3,
-                 spaceBetween: 40,
-                 },
-                 '768': {
-                 slidesPerView: 4,
-                 spaceBetween: 40,
-                 },
-                 '1024': {
-                 slidesPerView: 5,
-                 spaceBetween: 40,
-                 },
-                 '1216': {
-                 slidesPerView: 6,
-                 spaceBetween: 40,
-                 },
-                 '1408': {
-                 slidesPerView: 7,
-                 spaceBetween: 60,
-                 },
-             },
-             autoplay: {
-             delay: 5000,
-             speed: 3000,
-             },
-         });
-      </script>
-      <script>
-         document.addEventListener('DOMContentLoaded', () => {
-             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-             if ($navbarBurgers.length > 0) {
-                 $navbarBurgers.forEach(el => {
-                     el.addEventListener('click', () => {
-                         const target = el.dataset.target;
-                         const $target = document.getElementById(target);
-                         el.classList.toggle('is-active');
-                         $target.classList.toggle('is-active');
-                         console.log(el);
-                         if(el.classList.contains('is-active')){
-                             el.children[0].classList.add('is-hidden');
-                             el.children[1].classList.remove('is-hidden');
-                         }else{
-                             el.children[0].classList.remove('is-hidden');
-                             el.children[1].classList.add('is-hidden');
-                         }
-                     });
-                 });
-             }
-         });
-      </script>
-      <script>
-         window.onscroll = function() {scrollFunction()};
-         
-         function scrollFunction() {
-           if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-             document.querySelector("header").classList.add("is-solid");
-             document.querySelector(".logo.is-light").style.display = "none";
-             document.querySelector(".logo.is-dark").style.display = "block";
-             document.querySelector(".logo-mobile.is-light").style.display = "none";
-             document.querySelector(".logo-mobile.is-dark").style.display = "block";
-           } else {
-             document.querySelector("header").classList.remove("is-solid");
-             document.querySelector(".logo.is-dark").style.display = "none";
-             document.querySelector(".logo.is-light").style.display = "block";
-             document.querySelector(".logo-mobile.is-dark").style.display = "none";
-             document.querySelector(".logo-mobile.is-light").style.display = "block";
-           }
-         }
-      </script>
    </body>
 </html>

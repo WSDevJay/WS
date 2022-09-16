@@ -1,0 +1,11 @@
+.blog{
+
+    .blog-list-02{
+        margin-top: -79px;
+        padding-bottom: 2rem;
+        @include mobile {
+            padding-top: 5rem;
+        }
+    }
+
+}

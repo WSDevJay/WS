@@ -22,12 +22,6 @@
     padding-bottom: 161px;
     padding-inline: 1.5rem;
     flex-grow: 1;
-    @include until-fullhd {
-      padding-bottom: 120px;
-    }
-    @include touch {
-      padding-top: 113px;
-    }
 
     .hero-content{
       display: flex;

@@ -1,5 +1,16 @@
 .home{
 
+    .hero-main{
+        .hero-body{
+            @include until-fullhd {
+                padding-bottom: 120px;
+            }
+            @include touch {
+                padding-top: 113px;
+            }
+        }
+    }
+
     .marketing-text{
         margin-top: -69px;
         @include until-fullhd {
