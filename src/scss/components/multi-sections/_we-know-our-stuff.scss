@@ -1,10 +1,12 @@
 .we-know-our-stuff{
-    background: url(https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/curve-blue-white.png) no-repeat top/101%;
-    background-color: rgba(0, 0, 0, 0);
+    clip-path: ellipse(180% 100% at 50% 100%);
     z-index: 3;
     position: relative;
     background-color: #00ace5;
     padding: 90px 1.5rem;
+    @include mobile {
+        clip-path: ellipse(340% 100% at 50% 100%);
+    }
     &::before{
         content: "";
         position: absolute;
