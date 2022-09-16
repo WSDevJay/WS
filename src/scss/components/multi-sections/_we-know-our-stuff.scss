@@ -4,8 +4,14 @@
     position: relative;
     background-color: #00ace5;
     padding: 90px 1.5rem;
+    @include until-fullhd {
+        clip-path: ellipse(230% 100% at 50% 100%);
+    }
+    @include until-widescreen {
+        clip-path: ellipse(260% 100% at 50% 100%);
+    }
     @include mobile {
-        clip-path: ellipse(340% 100% at 50% 100%);
+        clip-path: ellipse(360% 100% at 50% 100%);
     }
     &::before{
         content: "";
