@@ -14,8 +14,14 @@
       background-size: cover;
       left: 0;
       top: 0;
-      z-index: 10;
+      z-index: 5;
     } 
+    &.is-primary{
+        
+    }
+    &.is-waves{
+
+    }
     .hero-body{
         padding-top: 200px;
         padding-bottom: 158px;

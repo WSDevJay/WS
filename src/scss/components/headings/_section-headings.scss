@@ -19,4 +19,15 @@
     &.dark{
         color: $grey;
     }
+    &.has-line{
+        &::after{
+            content: "";
+            display: block;
+            height: 1px;
+            width: 278px;
+            background-color: $yellow;
+            margin-inline: auto;
+            margin-top: 18px;
+        }
+    }
 }

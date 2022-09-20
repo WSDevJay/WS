@@ -11,12 +11,15 @@ $family-sans-serif: "Nunito Sans", sans-serif;
 $primary: $blue;
 $link: $blue;
 $border-hover: $grey;
+$body-color: $grey;
 
 // Update Bulma's components variables
 $navbar-background-color: transparent;
 $navbar-height: auto;
 $navbar-item-hover-background-color: transparent;
 $navbar-item-hover-color: $yellow;
+$content-heading-weight: 900;
+$text-strong: $grey;
 
 //Font-sizes
 $size-1: 3rem;
@@ -78,6 +81,7 @@ body{
 @import "components/widgets/author";
 @import "components/widgets/pagination";
 @import "components/widgets/prev-next";
+@import "components/widgets/tag";
 
 @import "components/headings/section-headings";
 
@@ -96,12 +100,14 @@ body{
 @import "components/sections/blog-list-02";
 @import "components/sections/get-started";
 @import "components/sections/faqs";
+@import "components/sections/blog-detail";
 
 @import "components/multi-sections/we-know-our-stuff";
 
 // Import pages
 @import "pages/home";
 @import "pages/blog";
+@import "pages/blog-detail-page";
 
 
 

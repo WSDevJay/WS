@@ -7,6 +7,12 @@
     place-items: center;
     border-radius: 99px;
     text-transform: uppercase;
+
+    &.is-medium{
+        height: 36px;
+        padding-inline: 14.25px;
+    }
+
     &.is-dark{
         color: $yellow;
         background-color: $grey;
@@ -39,6 +45,16 @@
     }
     &.is-blue{
         color: $grey;
+        background-color: $primary;
+        transition: all 200ms ease;
+
+        &:hover{
+            color: $primary;
+            background-color: $grey;
+        }
+    }
+    &.is-blue-white{
+        color: #fff;
         background-color: $primary;
         transition: all 200ms ease;
 

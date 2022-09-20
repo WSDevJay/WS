@@ -1,0 +1,163 @@
+.faqs{
+    padding-top: 2.5rem;
+    padding-bottom: 120px;
+    padding-inline: 1.5rem;
+    position: relative;
+    overflow: hidden;
+
+    .container{
+        max-width: 1000px !important;
+    }
+
+    &::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: $grey;
+        clip-path: ellipse(120% 100% at 50% 100%);
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        @include mobile {
+            clip-path: ellipse(240% 100% at 50% 100%);
+        }
+    }
+    &::after{
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: url('https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/graphic-circles-faqs.png');
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    .container{
+        position: relative;
+        z-index: 3;
+    }
+
+    .accordions-container{
+        @-webkit-keyframes spinAround{
+            from{
+                -webkit-transform:rotate(0);
+                transform:rotate(0)
+            }
+            to{
+                -webkit-transform:rotate(359deg);
+                transform:rotate(359deg)
+            }
+        }
+        @keyframes spinAround{
+            from{
+                -webkit-transform:rotate(0);
+                transform:rotate(0)
+            }
+            to{
+                -webkit-transform:rotate(359deg);
+                transform:rotate(359deg)
+            }
+        }
+        .accordions .accordion:not(:last-child){
+            margin-bottom:1.5rem
+        }
+        .accordions .accordion{
+            display:flex;
+            flex-direction:column;
+            background-color:transparent;
+            border-radius:4px;
+            font-size:1rem
+        }
+        .accordions .accordion strong{
+            color:currentColor
+        }
+        .accordions .accordion a:not(.button):not(.tag){
+            color:currentColor;
+            text-decoration:underline
+        }
+        .accordions .accordion:not(:first-child) .accordion-header{
+            border-radius:0
+        }
+        .accordions .accordion:not(:last-child){
+            margin-bottom:0
+        }
+        .accordions .accordion:not(:last-child) .accordion-content{
+            border-radius:0
+        }
+        .accordions .accordion .toggle,.accordions .accordion [data-action=toggle]{
+            cursor:pointer
+        }
+        .accordions .accordion .accordion-header{
+            align-items: flex-start;
+            background-color:transparent;
+            border-radius:4px 4px 0 0;
+            color: #fff;
+            font-weight: 900;
+            font-size: $size-5;
+            display:flex;
+            line-height:1.25;
+            padding: 10px 0;
+            position:relative;
+            gap: .5rem;
+            text-transform: uppercase;
+        }
+        @media screen and (max-width: 1023px) {
+            .accordions .accordion .accordion-header{
+                font-size: 1.2rem;
+            }
+        }
+        .accordions .accordion .accordion-header .toggle{
+            user-select:none;
+            pointer-events: none;
+            background-color: transparent;
+            border: none;
+            position: relative;
+            height: 20px;
+            width: 20px;
+        }
+        .accordions .accordion .accordion-header .toggle::before{
+            content: url('https://api.iconify.design/fa-solid/chevron-circle-down.svg?color=%23f0e100&width=20&height=20');
+            color:#fff;
+            display:block;
+            position:absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transform-origin: center;
+            color: $yellow;
+        }
+        .accordions .accordion .accordion-header .toggle::after{
+            display:none
+        }
+        .accordions .accordion .accordion-header+.accordion-body{
+            overflow-y:hidden;
+            max-height:0;
+            color: $yellow;
+            border-radius: 0;
+            border-top-left-radius:0;
+            border-top-right-radius:0;
+            border-top:none;
+            transition:max-height .2s ease;
+            font-weight: 900;
+        }
+        .accordions .accordion .accordion-header+.accordion-body .accordion-content{
+            padding: 0 0 10px 0;
+        }
+        .accordions .accordion .accordion-header+.accordion-body .accordion-content code,.accordions .accordion .accordion-header+.accordion-body .accordion-content pre{
+            background-color:#fff
+        }
+        .accordions .accordion .accordion-header+.accordion-body .accordion-content pre code{
+            background-color:transparent
+        }
+        .accordions .accordion.is-active .accordion-header .toggle::before{
+            transform: translate(-50%, -50%) rotate(180deg);
+            top: 50%;
+        }
+        .accordions .accordion.is-active .accordion-body{
+            max-height:100em
+        }
+        
+    }
+
+}

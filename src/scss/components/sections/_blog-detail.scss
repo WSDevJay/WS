@@ -1,0 +1,37 @@
+.blog-detail{
+    background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/curve.png) no-repeat top/101%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 3;
+    position: relative;
+    padding-inline: 1.5rem;
+    padding-bottom: 60px;
+    padding-top: 4.5rem;
+
+    .left{
+        @include mobile {
+           display: grid;
+
+           .author{
+            order: 2;
+           }
+           .button{
+            order: 3;
+           }
+        }
+
+        >.image{
+            margin-bottom: 35px;
+        }
+    }
+
+    .author{
+        margin-bottom: 34px;
+        @include desktop{
+            margin-top: -2.3rem;
+        }
+        @include mobile {
+            margin-bottom: 0;
+        }
+    }
+
+}

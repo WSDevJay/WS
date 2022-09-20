@@ -1,0 +1,38 @@
+.blog-detail-page{
+
+    .blog-detail{
+        margin-top: -79px;
+    }
+
+    .prev-next-section{
+        z-index: 10;
+        position: relative;
+
+        @include mobile {
+            padding: 50px 1.5rem 110px;
+        }
+    }
+
+    .businesses-who-trust-us{
+        margin-top: -73px;
+        position: relative;
+        z-index: 15;
+    }
+
+    .faqs{
+        margin-top: -1rem;
+        position: relative;
+        z-index: 20;
+        @include mobile {
+            padding-top: 3.5rem;
+        }
+    }
+
+    .get-started{
+        margin-top: -59px;
+        position: relative;
+        z-index: 25;
+        padding-bottom: 0;
+    }
+
+}

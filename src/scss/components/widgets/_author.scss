@@ -1,18 +1,18 @@
 .media.author {
-  align-items: flex-end;
+  align-items: center;
   .media-left {
-    flex-basis: 48px;
-    &.is-large {
-      flex-basis: 50%;
-      & + .media-content {
-        margin-bottom: 4rem;
-      }
+    flex: 1;
+    @include mobile {
+      width: 140px;
+      flex: none;
     }
   }
-}
-
-.blog-detail .author {
-  @include desktop {
-    margin-top: -17%;
+  .media-content{
+    flex: 1;
+    transform: translateY(30%);
+    .name{
+      font-weight: 800;
+      line-height: 1.2;
+    }
   }
 }

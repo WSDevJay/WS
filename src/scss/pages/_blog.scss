@@ -8,4 +8,19 @@
         }
     }
 
+    .faqs{
+        margin-top: -1rem;
+        @include mobile {
+            padding-top: 3.5rem;
+        }
+    }
+
+    .get-started{
+        margin-top: -59px;
+        position: relative;
+        z-index: 5;
+
+        padding-bottom: 0;
+    }
+
 }

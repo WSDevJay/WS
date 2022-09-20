@@ -1,0 +1,21 @@
+.tags{
+    margin-bottom: 25px;
+
+    .tag{
+        font-weight: 900;
+        padding-block: .3rem;
+        padding-inline: 11.25px;
+        width: fit-content;
+        display: grid;
+        place-items: center;
+        border-radius: 99px;
+        text-transform: uppercase;
+        font-size: $size-7;
+        display: inline-block;
+        margin: 2px;
+        &.is-dark{
+            background-color: $grey;
+            color: #fff;
+        }
+    }
+}
