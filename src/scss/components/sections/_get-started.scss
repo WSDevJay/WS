@@ -66,13 +66,14 @@
                 height: 2px;
                 width: 100%;
                 background-color: $primary;
-                margin-top: .4rem;
-                margin-bottom: .6rem;
+                margin-top: .6rem;
+                margin-bottom: .8rem;
             }
             p{
                 font-weight: 800;
                 color: $grey;
                 line-height: 1.2;
+                font-size: $size-5;
             }
             a.button{
                 position: absolute;

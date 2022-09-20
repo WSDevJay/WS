@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <title>Portfolio Detail Page</title>
+      <link rel="stylesheet" href="../assets/css/main-2022.min.css">
+      <link rel="stylesheet" media="print" href="https://uploads.prod01.london.platform-os.com/instances/190/assets/fonts/fonts.css" onload="this.media='all'">
+      <script src="https://uploads.prod01.london.platform-os.com/instances/190/assets/js/vendor/iconify.min.js?updated=1662609857000"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script src="https://uploads.prod01.london.platform-os.com/instances/190/assets/js/vendor/bulma-accordions.min.js?updated=1663657749436"></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', () => {
+             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+             if ($navbarBurgers.length > 0) {
+                 $navbarBurgers.forEach(el => {
+                     el.addEventListener('click', () => {
+                         const target = el.dataset.target;
+                         const $target = document.getElementById(target);
+                         el.classList.toggle('is-active');
+                         $target.classList.toggle('is-active');
+                         console.log(el);
+                         if(el.classList.contains('is-active')){
+                             el.children[0].classList.add('is-hidden');
+                             el.children[1].classList.remove('is-hidden');
+                         }else{
+                             el.children[0].classList.remove('is-hidden');
+                             el.children[1].classList.add('is-hidden');
+                         }
+                     });
+                 });
+             }
+         });
+      </script>
+      <script>
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+           if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+             document.querySelector("header").classList.add("is-solid");
+             document.querySelector(".logo.is-light").style.display = "none";
+             document.querySelector(".logo.is-dark").style.display = "block";
+             document.querySelector(".logo-mobile.is-light").style.display = "none";
+             document.querySelector(".logo-mobile.is-dark").style.display = "block";
+           } else {
+             document.querySelector("header").classList.remove("is-solid");
+             document.querySelector(".logo.is-dark").style.display = "none";
+             document.querySelector(".logo.is-light").style.display = "block";
+             document.querySelector(".logo-mobile.is-dark").style.display = "none";
+             document.querySelector(".logo-mobile.is-light").style.display = "block";
+           }
+         }
+      </script>
+   </head>
+   <body>
+      <header class="is-fixed-top">
+         <div class="container">
+            <div class="columns m-0 is-align-items-end">
+               <div class="column is-narrow logo-col is-hidden-touch">
+                  <a href="/">
+                  <img class="logo is-light" src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/ws-logo-white.png" alt="Website Success Logo">
+                  <img class="logo is-dark" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/ws-logo-colour.svg" alt="Website Success Logo">
+                  </a>
+               </div>
+               <div class="column nav-col">
+                  <div class="top-nav is-hidden-touch">
+                     <ul>
+                        <li class="phone">
+                           <a href="">
+                           <span class="iconify" data-icon="fa-solid:phone"></span>
+                           01243 888 555 
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <span class="iconify" data-icon="fa-solid:user"></span>
+                           CLIENT LOGIN
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <nav class="navbar is-transparent" aria-label="main navigation">
+                     <div class="navbar-brand">
+                        <div class="logo-col is-hidden-desktop">
+                           <a href="/">
+                           <img class="logo-mobile is-light" src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/ws-logo-white.png" alt="Website Success Logo">
+                           <img class="logo-mobile is-dark" src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2022/ws-logo-colour.svg" alt="Website Success Logo">
+                           </a>
+                        </div>
+                        <a href="" class="phone-mobile is-hidden-desktop">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512">
+                              <path fill="currentColor" d="m493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464c0-11.2-7.7-20.9-18.6-23.4z"/>
+                           </svg>
+                        </a>
+                        <a href="" class="client-login-mobile is-hidden-desktop">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512">
+                              <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/>
+                           </svg>
+                        </a>
+                        <a role="button" class="navbar-burger burger is-hidden-desktop" aria-label="menu" aria-expanded="false" data-target="navbar">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h22M5 16h22M5 24h22"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" class="is-hidden" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                              <path fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/>
+                           </svg>
+                        </a>
+                     </div>
+                     <div id="navbar" class="navbar-menu">
+                        <div class="navbar-end">
+                           <a class="navbar-item is-size-4" href="/design">Design</a>
+                           <a class="navbar-item is-size-4" href="/build">Build</a>
+                           <div class="navbar-item is-size-4 has-dropdown is-hoverable">
+                              <a class="navbar-link" href="/market">
+                              Market
+                              </a>
+                              <div class="navbar-dropdown">
+                                 <a class="navbar-item">
+                                 ppc
+                                 </a>
+                                 <a class="navbar-item">
+                                 seo
+                                 </a>
+                                 <a class="navbar-item">
+                                 content
+                                 </a>
+                                 <a class="navbar-item">
+                                 strategy
+                                 </a>
+                              </div>
+                           </div>
+                           <a class="navbar-item" href="/portfolio">Portfolio</a>
+                           <a class="navbar-item" href="/about">About</a>
+                           <a class="navbar-item" href="/blogs">Blog</a>
+                           <a class="navbar-item" href="/contact">Contact</a>
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main>
+         <div class="portfolio-detail-page">
+            <section class="hero-inner-pages -- is-waves">
+               <div class="hero-body">
+                  <div class="hero-content">
+                     <div class="description">
+                        <h1>Marlin</h1>
+                        <div class="line"></div>
+                        <p>Marlin Environmental Services was established in 2003, harnessing 30 years' experience in serving specialised segments of marine and industrial markets at dockyards and locations throughout the UK and beyond.
+                            They have evolved their services over the years, finding ways to provide a more seamless experience by filling the gaps between cleaning, maintenance and engineering services.</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="what-was-required">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-6">
+                            <div class="desktop-image">
+                                <img src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/portfolio/marlin/marlin-desktop.jpg?updated=1572266642" alt="Marlin website on desktop">
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="description">
+                                <h3>What was required</h3>
+                                <p>Marlin wanted a revamp on the existing website they had with us. They wanted us to design and develop an easier to navigate, stylish website to showcase the variety of cleaning services they provide to the marine industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="what-we-did">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-6">
+                            <div class="description">
+                                <h3>What we did</h3>
+                                <p>We worked closely with the team and designed not only a great looking website but also a website that met all their requirements as a business. It looks great and clearly shows all the services they provide so that potential customers can find out more and then contact them if they are interested.</p>
+                            </div>
+                            <a href="/" class="button is-yellow">
+                                <div class="icon-text">
+                                  <span>View Website</span>
+                                  <span class="icon">
+                                    <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                  </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column is-6">
+                          <div class="mobile-image-container">
+                                <div class="mobile-image -- img01">
+                                    <img src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/portfolio/marlin/marlin-mobile-01.jpg?updated=1572266643" alt="Marlin website on mobile">
+                                </div>
+                                <div class="mobile-image -- img02">
+                                    <img src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/portfolio/marlin/marlin-mobile-01.jpg?updated=1572266643" alt="Marlin website on mobile">
+                                </div>
+                                <div class="mobile-image -- img03">
+                                    <img src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/portfolio/marlin/marlin-mobile-01.jpg?updated=1572266643" alt="Marlin website on mobile">
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="get-started">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-4">
+                            <div class="dev">
+                                <img src="https://websitesuccess.mo.cloudinary.net/ws/images/team-pictures/nick-fenmor-collins.png" alt="Nick Fenmor Collins">
+                                <p>Nick Fenmor Collins - Founder</p>
+                            </div>
+                        </div>
+                        <div class="column is-8">
+                            <div class="info-box">
+                                <h3>START YOUR JOURNEY TO WEBSITE SUCCESS...</h3>
+                                <div class="line"></div>
+                                <p>I'd love to hear about your project and help you reach your website goals.</p>
+                                <a href="/" class="button is-dark">
+                                    <div class="icon-text">
+                                        <span>GET STARTED</span>
+                                        <span class="icon">
+                                        <span class="iconify" data-icon="fa-solid:chevron-circle-right"></span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+         </div>
+      </main>
+      <footer>
+         <div class="container">
+            <div class="columns">
+               <div class="column is-6 say-hello">
+                  <h4>Say Hello</h4>
+                  <ul>
+                     <li>
+                        <span class="icon-text">
+                        <span class="icon"><span class="iconify" data-icon="fa-solid:phone"></span></span>
+                        01243 888 555
+                        </span>
+                     </li>
+                     <li>
+                        <span class="icon-text">
+                        <span class="icon"><span class="iconify" data-icon="fa6-solid:location-dot"></span></span>
+                        30 The Hornet, Chichester, West Sussex, PO19 7JG
+                        </span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="column is-6 partners">
+                  <div class="partners-logo">
+                     <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/google-partner.png" alt="google-partner">
+                     <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/trusted-suplier.png" alt="trusted-suplier">
+                     <img src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/best-business-enabler.png" alt="best-business-enabler">
+                  </div>
+               </div>
+            </div>
+            <div class="sub-footer">
+               <div class="columns is-vcentered">
+                  <div class="column is-6 all-rights-reserved">
+                     <h6>© Website Success. All Rights Reserved.</h6>
+                  </div>
+                  <div class="column is-6 socials">
+                     <ul>
+                        <li>
+                           <a href=""><span class="iconify" data-icon="fa-brands:facebook-square"></span></a>
+                        </li>
+                        <li>
+                           <a href=""><span class="iconify" data-icon="fa-brands:twitter"></span></a>
+                        </li>
+                        <li>
+                           <a href=""><span class="iconify" data-icon="fa-brands:linkedin"></span></a>
+                        </li>
+                        <li>
+                           <a href=""><span class="iconify" data-icon="fa-brands:instagram"></span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      
+   <script>
+      const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 30,
+            centeredSlides: true,
+            breakpoints: {
+               '500': {
+               slidesPerView: 3,
+               spaceBetween: 40,
+               },
+               '768': {
+               slidesPerView: 4,
+               spaceBetween: 40,
+               },
+               '1024': {
+               slidesPerView: 5,
+               spaceBetween: 40,
+               },
+               '1216': {
+               slidesPerView: 6,
+               spaceBetween: 40,
+               },
+               '1408': {
+               slidesPerView: 7,
+               spaceBetween: 60,
+               },
+            },
+            autoplay: {
+            delay: 5000,
+            speed: 3000,
+            },
+      });
+   </script>
+
+   <script>
+      window.addEventListener("load", function() {
+      var accordions = bulmaAccordion.attach(); 
+      });
+   </script>
+   
+   <script>
+      window.addEventListener("load", function() {
+      var myTabs = document.querySelectorAll(".faqs ul.menu-list > li");
+      var myContentPanes = document.querySelectorAll(".accordions");
+   
+      function myTabClicks(tabClickEvent) {
+   
+         for (var i = 0; i < myTabs.length; i++) {
+            myTabs[i].classList.remove("active");
+         }
+   
+         var clickedTab = tabClickEvent.currentTarget;
+         clickedTab.classList.add("active");
+         tabClickEvent.preventDefault();
+   
+         for (i = 0; i < myContentPanes.length; i++) {
+            myContentPanes[i].classList.remove("active");
+         }
+   
+         var anchorReference = tabClickEvent.target;
+         var activePaneId = anchorReference.getAttribute("href");
+         var activePane = document.querySelector(activePaneId);
+         activePane.classList.add("active");
+      }
+   
+      for (i = 0; i < myTabs.length; i++) {
+         myTabs[i].addEventListener("click", myTabClicks)
+      }
+   
+      });
+   </script>
+   
+   <script>
+      window.addEventListener("load", function() {
+         const accordions = document.querySelectorAll('.accordions');
+         for(const item of accordions){
+            item.firstElementChild.classList.add('is-active');
+         }
+      });
+   </script>
+
+   </body>
+</html>

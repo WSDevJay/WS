@@ -55,6 +55,9 @@
             .tag{
                 text-transform: uppercase;
                 margin-bottom: 4px;
+                span{
+                    font-weight: 200;
+                }
                 .seperator{
                     transition-duration: 0.3s;
                     transition-timing-function: ease-out;

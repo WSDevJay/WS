@@ -1,8 +1,8 @@
-.blog{
+.portfolio-detail-page{
 
-    .blog-list-02{
+   .what-was-required{
         margin-top: -79px;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
         @include touch {
             padding-top: 7rem;
         }
@@ -13,19 +13,17 @@
             z-index: 15;
             position: relative;
         }
-    }
+   }
 
-    .faqs{
-        margin-top: -1rem;
-        @include mobile {
-            padding-top: 3.5rem;
-        }
-    }
+   .what-we-did{
+        position: relative;
+        z-index: 15;
+   }
 
     .get-started{
         margin-top: -59px;
         position: relative;
-        z-index: 5;
+        z-index: 20;
         padding-bottom: 1rem;
     }
 

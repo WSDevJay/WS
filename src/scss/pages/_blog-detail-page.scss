@@ -2,10 +2,9 @@
 
     .blog-detail{
         margin-top: -79px;
-
         .container{
-            position: relative;
             z-index: 20;
+            position: relative;
         }
     }
 
@@ -37,7 +36,7 @@
         margin-top: -59px;
         position: relative;
         z-index: 25;
-        padding-bottom: 0;
+        padding-bottom: 1rem;
     }
 
 }

@@ -1,5 +1,10 @@
-.blog-list-02{
+.our-latest-creation-02{
     background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/curve.png) no-repeat top/101%;
     background-color: rgba(0, 0, 0, 0);
     padding: 135px 1.5rem;
+
+    .container{
+        z-index: 15;
+        position: relative;
+    }
 }

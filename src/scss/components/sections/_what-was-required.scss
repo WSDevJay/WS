@@ -1,0 +1,47 @@
+.what-was-required{
+    background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2022/curve.png) no-repeat top/101%;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    padding-inline: 1.5rem;
+    padding-block: 135px;
+
+    .desktop-image{
+        position: relative;
+        &::before{
+            content: "";
+            background-image: url('https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/iMac.png');
+            background-size: cover;
+            display: block;
+            padding-bottom: 84%;
+            height: 0;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+        }
+        >img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            margin: 0 auto;
+            width: 92%;
+            margin-top: 3.95%;
+        }
+    }
+    .description{
+        border-bottom: 2px solid $grey;
+        padding-bottom: 1rem;
+        h3{
+            font-size: $size-4;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        p{
+            font-weight: 800;
+            max-width: 500px;
+            line-height: 1.3;
+        }
+    }
+}
