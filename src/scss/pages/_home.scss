@@ -28,12 +28,36 @@
         }
     }
 
+    .our-latest-creation{
+        .columns{
+            @include mobile {
+                margin-bottom: 33px;
+            }
+        }
+    }
+
     .businesses-who-trust-us{
         margin-top: -5rem;
     }
 
+    .the-website-success-way{
+        .container{
+            .heading{
+                @include until(535px) {
+                    max-width: 200px;
+                    margin-inline: auto;
+                }
+            }
+        }
+    }
+
     .blog-list{
         margin-top: -4rem;
+        .columns{
+            @include mobile {
+                margin-bottom: 33px;
+            }
+        }
     }
     
 

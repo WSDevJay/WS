@@ -55,14 +55,19 @@
             .tag{
                 text-transform: uppercase;
                 margin-bottom: 4px;
-                span{
-                    font-weight: 200;
+                display: inline-block;
+
+                >span{
+                    &:not(:first-child){
+                        &::before{
+                            content: "/ ";
+                            color: $primary;
+                            display: inline-block;
+                            margin-right: .2rem;
+                        }
+                    }
                 }
-                .seperator{
-                    transition-duration: 0.3s;
-                    transition-timing-function: ease-out;
-                    color: $primary;
-                }
+                
             }
             h4{
                 font-weight: 900;
