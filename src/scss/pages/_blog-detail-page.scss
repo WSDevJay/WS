@@ -2,6 +2,11 @@
 
     .blog-detail{
         margin-top: -79px;
+
+        .container{
+            position: relative;
+            z-index: 20;
+        }
     }
 
     .prev-next-section{
